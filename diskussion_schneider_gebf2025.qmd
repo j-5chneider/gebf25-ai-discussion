@@ -1,0 +1,449 @@
+---
+title: "Diskussion"
+subtitle: "Symposium: Chancen und Risiken KI-gestützter Literaturüberblicke und Metaanalysen"
+title-slide-attributes:
+  data-background-image: www/title-bg2.jpg
+  data-background-size: cover
+  #data-background-opacity: "0.3"
+author: "<br /><br /><b>Jürgen Schneider</b>"
+date: today # "20. Mar 2024"
+date-format: "DD MMMM YYYY"
+format: 
+  revealjs:
+      theme: [white] # sky default
+      logo: www/dipf-logo.png
+      footer: "Slides: [t1p.de/gebf25-diskussion-ai](https://t1p.de/gebf25-diskussion-ai)"
+      smaller: true
+      scrollable: true
+      transition: fade
+      width: 1500
+      height: 850
+      hide-inactive-cursor: false
+      embed-resources: true
+editor: source
+editor_options: 
+  chunk_output_type: console
+bibliography: www/references.bib
+css: www/style.css
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      message=FALSE, 
+                      warning=FALSE)
+### DOWNLOAD NEWEST SOURCES
+## befindet sich im DIPF Ordner
+# download.file("https://drive.google.com/uc?export=download&id=1ASV99YHMHSNChSNzqbZwvz2SiqYvmqO_",
+#               "www/references.bib", overwrite = T)
+
+
+library(fontawesome)
+```
+
+
+## Open Science bei Forschungssynthesen
+
+\
+
+#### Studien, die PRISMA-Kriterien in Forschungssynthesen beurteilen
+
+* Wong & Bouchard (2023): Keine von 33 Metaanalysen vollständig reproduzierbar (22 Kriterien, PRISMA-basiert).
+* Sun et al. (2019): 64 Synthesen, durchschnittlich 19/27 PRISMA- und 6/11 AMSTAR-Punkte.
+* Maticic et al. (2019): Über 60 % von 244 Synthesen berichten weniger als 50 % der PRISMA-A-Kriterien.
+* Lakens et al. (2017): Nur 4 % der 20 Metaanalysen erfüllen Dokumentationsstandards, 25 % nicht reproduzierbar.
+* Polanin et al. (2020): 155 Studien berichten im Durchschnitt 55 % der PRISMA-Kriterien.
+
+\
+
+**Aus König et al.:**  
+“we acquired data from 28 meta-analyses” von den 180 der Recherche?
+
+
+## Open Science bei Forschungssynthesen
+
+[@Schneider.Heck.2024]  
+![](www/schneider_heck.jpg)
+
+## Vorgehen
+
+\
+
+#### Diskussion der Beiträge entlang
+
+
+::::{.columns}
+:::{.column}
+
+- Präregistriert/ Registered Report
+- FAIR Data
+- Reproduzierbarkeit
+- Publikationsformat
+
+:::
+:::{.column}
+
+- Wo sind **Stärken**?
+- Wo sind **Herausforderungen**?
+- Was können **wir alle** daraus mitnehmen?
+
+:::
+::::
+
+## "Ein systematischer Überblick über Tools"
+### Fütterer et al. 
+
+\
+ 
+* KI-Tools verringern die Arbeitsbelastung -> weniger Ermüdung, weniger Verzerrungen/Fehler
+* Recherche, Analyse und Testung von Tools -> spart Kolleg:innen Zeit, stellt Qualität sicher
+
+
+\
+
+::::{.columns}
+:::{.column width="30%"}
+**Präregistriert/ Registered Report**
+:::
+:::{.column}
+Sinnvoll anwendbar? (evtl. exclusion criteria)
+:::
+::::
+
+::::{.columns}
+:::{.column width="30%"}
+**FAIR Data**
+:::
+:::{.column}
+`r fa("square-check", width="50px", fill="#7AAD7B")`
+:::
+::::
+
+
+::::{.columns}
+:::{.column width="30%"}
+**Reproduzierbarkeit**
+:::
+:::{.column}
+`r fa("square-check", width="50px", fill="#7AAD7B")`
+:::
+::::
+
+::::{.columns}
+:::{.column width="30%"}
+**Publikationsformat**
+:::
+:::{.column}
+`r fa("circle-question", width="50px", fill="#fcc200")`
+:::
+::::
+
+
+
+:::{.notes}
+* Preregistration: Im Manuskript geben Sie an, dass Sie, im Gegensatz zu den anderen mit der ASReview-Software vertraut sind. *"we would not say we were biased"*. -> Präregistrierung der exclusion criteria: weiteres Argument gegen Bias
+* we iteratively realized that, in addition to the predefined exclusion criteria, we needed additional ones.“  why?
+:::
+
+
+## "Ein systematischer Überblick über Tools"
+### Fütterer et al. 
+
+#### Anderes Publikationsformat?
+- Alternative: **OER** (z. B. Quarto Book) bietet interaktive Möglichkeiten, Ergänzungen & Updates (längere Halbwertszeit).
+- Ermöglicht kollaboratives Arbeiten: Kolleg*innen können per Pull-Request Inhalte ergänzen.
+- Begrenzung durch Word-Limits entfällt.<br /><br />
+
+#### Die Verlockung klassischer Publikationsformate
+- „Währung der Wissenschaft“ (z.B. Einstellungsverfahren, Forschendenevaluation)
+- Es fehlen etablierte Alternativen, um Informationen **effektiv in die Community** zu bringen.<br /><br />
+
+#### Alternative Formate des Forschungsbeitrags: Anreize
+- Etablierte Professor:innen: Universität/Einrichtung **@CoARA.2022** unterzeichnen, action plan umsetzen
+- Wiss. Gesellschaften: Position beziehen, schriftlich fixieren (z.B. Stellungnahme der GEBF-OSI?)
+
+
+:::{.notes}
+
+:::
+
+
+
+
+
+
+## "Abbruchregeln im KI-gestützten Screening"
+### König et al. 
+
+\
+ 
+* verringerte Arbeitsbelastung beim Screening -> weniger Ermüdung, weniger Verzerrungen/Fehler
+* Vielfalt an Stopping rules, Learning algorithms/classification methods, Softwares
+
+
+\
+
+::::{.columns}
+:::{.column width="30%"}
+**Präregistriert/ Registered Report**
+:::
+:::{.column width="70%"}
+`r fa("square-check", width="50px", fill="#7AAD7B")` + dokumentierte Abweichung
+:::
+::::
+
+::::{.columns}
+:::{.column width="30%"}
+**FAIR Data**
+:::
+:::{.column width="70%"}
+`r fa("square-check", width="50px", fill="#7AAD7B")`
+:::
+::::
+
+
+::::{.columns}
+:::{.column width="30%"}
+**Reproduzierbarkeit**
+:::
+:::{.column width="70%"}
+`r fa("square-check", width="50px", fill="#7AAD7B")` übersichtliche Ordnerstruktur & Dateibenennung. Siehe z.B. [Psych-DS](https://psychds-docs.readthedocs.io/en/latest/)<br />
+`r fa("circle-question", width="50px", fill="#fcc200")` Benennung der Software- & Paketversionen? (alternativ: [renv](https://rstudio.github.io/renv/articles/renv.html), [groundhog](https://groundhogr.com/))
+
+:::
+::::
+
+::::{.columns}
+:::{.column width="30%"}
+**Publikationsformat**
+:::
+:::{.column}
+`r fa("circle-question", width="50px", fill="#fcc200")`
+:::
+::::
+
+
+
+:::{.notes}
+- reproduzierbarkeit: Code sehr gut auskommentiert
+:::
+
+## "Abbruchregeln im KI-gestützten Screening"
+### König et al. 
+
+\
+\
+
+#### "Preregistration: A Plan, Not a Prison" [@DeHaven.2017]
+
+![](www/prereg.jpg){width=70% .box-shadow}
+
+
+
+## "Abbruchregeln im KI-gestützten Screening"
+### König et al. 
+
+
+::::{.columns}
+:::{.column width="70%"}
+
+\
+\
+
+* Neue Artikel- & Publikationsformate sinnvoll?
+  - Executable Research Article (z.B. eLife) [@Lasser.2020]
+  - Quarto Markdown-Dokument (Input, Output, Text, Bilder, ...)
+  - Jupyter Notebooks
+* Wie die nächsten Schritte gehen?
+  - Verlage haben keinen Grund für Änderungen
+  - Diese müssen von uns angestoßen werden - we got the power ;)
+  
+:::
+:::{.column width="30%"}
+![](www/journal.jpg){width="100%"}
+:::
+::::
+
+
+:::{.notes}
+beim durchlesen des Manuskripts habe ich mir manchmal versucht das Beschriebene als Code vorzustellen
+--> warum nicht gleich als Code anzeigen?
+:::
+
+
+
+## "Abbruchregeln im KI-gestützten Screening"
+### König et al. 
+
+#### eLife: Executable Research Article
+
+:::{width="95%"}
+![](www/executable.jpg){.border1}
+:::
+
+## "Abbruchregeln im KI-gestützten Screening"
+### König et al. 
+
+
+![](www/quarto.jpg){.border1}
+\
+
+#### [Einführung Quarto](https://www.youtube.com/watch?v=_f3latmOhew)
+
+
+## "Einsatz von Large Language Models"
+### Chernikova & Stadler
+
+\
+
+* Unterstützung von LLM bei Forschungssynthesen (screening, extracting information, coding)
+* Niederschwelliger als machine learning
+
+\
+
+::::{.columns}
+:::{.column width="30%"}
+**Präregistriert/ Registered Report**
+:::
+:::{.column width="70%"}
+(bisher) keine Information
+:::
+::::
+
+::::{.columns}
+:::{.column width="30%"}
+**FAIR Data**
+:::
+:::{.column width="70%"}
+(bisher) keine Information
+:::
+::::
+
+
+::::{.columns}
+:::{.column width="30%"}
+**Reproduzierbarkeit**
+:::
+:::{.column width="70%"}
+`r fa("circle-question", width="50px", fill="#fcc200")`
+
+:::
+::::
+
+::::{.columns}
+:::{.column width="30%"}
+**Publikationsformat**
+:::
+:::{.column}
+laufende Untersuchung
+:::
+::::
+
+
+
+:::{.notes}
+:::
+
+
+
+## "Einsatz von Large Language Models"
+### Chernikova & Stadler
+
+::::{.columns}
+:::{.column width="55%"}
+
+\
+
+#### Reproduzierbarkeit:
+
+**Unabhängige** Forschende, die   
+**dieselben** Daten und Analyseverfahren verwenden,   
+gelangen zu **identischen** Resultaten
+
+\
+
+"In principle, all reported evidence should be reproducible" [@Nosek.etal.2022, S. 721]
+:::
+:::{.column width="45%"}
+
+#### Mit proprietären LLMs
+
+![](www/chatgpt2.jpg)
+:::
+::::
+
+## "Einsatz von Large Language Models"
+### Chernikova & Stadler
+
+
+\
+
+LLM / AI wird wohl intransparent bleiben  
+
+![](www/ai.jpg){.border1}  
+[(Reuters, January 22, 2025)](https://www.reuters.com/technology/artificial-intelligence/trump-announce-private-sector-ai-infrastructure-investment-cbs-reports-2025-01-21/)
+
+
+
+
+## "Einsatz von Large Language Models"
+### Chernikova & Stadler
+
+::::{.columns}
+:::{.column width="50%"}
+![](www/chatgpt.jpg)
+:::
+:::{.column width="50%"}
+
+* Dokumentation der Modelle, Einstellungen
+* temperature = 0? <br />*"A temperature of 0 would make the model completely deterministic, always choosing the most likely token."*
+* Zugriff auf ältere Modelle nach Updates evtl. nicht möglich
+
+=> **AG** innerhalb der GEBF sinnvoll? (z.B. im Austausch mit der AG Open Science)
+
+:::
+::::
+
+
+
+
+
+
+
+
+
+## Zum Abschluss
+### ein Vorschlag & Ressourcen
+
+\
+
+* Folien teilen als Standard?
+* Repositorien, z.B. Zenodo oder OSF
+  - DOI = zitierbar (!)
+  - URL-Kürzer, z.B. t1p.de (keine Datenkrake)
+
+\
+
+* OER **Reproduzierbarkeit**: [j-5chneider.github.io/reproduce](https://j-5chneider.github.io/reproduce/)
+* OER **Open / FAIR Data**: [j-5chneider.github.io/utrecht24](https://j-5chneider.github.io/utrecht24/)
+
+# Thank you
+
+![](www/dipf-logo.png){width="20%"}\
+\
+
+**Jürgen Schneider**\
+[ju.schneider\@dipf.de](mailto:ju.schneider@dipf.de){.email}
+
+## References
+
+::: {#refs}
+:::
+
+## Credit
+
+Title page 
+  
+Icons by Font Awesome CC BY 4.0
+
+
