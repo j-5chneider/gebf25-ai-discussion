@@ -50,11 +50,13 @@ library(fontawesome)
 
 ::::{.columns}
 :::{.column .text-center width="40%"}
-**Open Science, Forschungssynthesen**  
+
+### **Open Science, Forschungssynthesen**  
 ![](www/patrick1.jpg)
 :::
 :::{.column .text-center width="39%"}
-**AI**  
+
+### <br />**AI**  
 ![](www/patrick2.jpg)
 :::
 ::::
@@ -97,7 +99,7 @@ library(fontawesome)
 
 \
 
-#### Warum so wenig Präregistrierungen?
+#### Warum so wenige Präregistrierungen?
 
 * **Educational Research Review** (Vol. 45, Nov): <br />2/14 Artikel mit Präregistrierungen
 * [PROSPERO](https://www.crd.york.ac.uk/prospero/) "systematic reviews with a health-related outcome"
@@ -161,7 +163,7 @@ Sinnvoll anwendbar? (evtl. exclusion criteria)
 **FAIR Data**
 :::
 :::{.column}
-`r fa("square-check", width="50px", fill="#7AAD7B")`
+`r fa("square-check", width="50px", fill="#7AAD7B")` (.xlsx -> .csv = human readable)
 :::
 ::::
 
@@ -171,7 +173,8 @@ Sinnvoll anwendbar? (evtl. exclusion criteria)
 **Reproduzierbarkeit**
 :::
 :::{.column}
-`r fa("square-check", width="50px", fill="#7AAD7B")`
+`r fa("square-check", width="50px", fill="#7AAD7B")` Suchstrategie, Screening & Coding manual  
+`r fa("circle-question", width="50px", fill="#fcc200")` "Daten" = Software = nicht teilbar
 :::
 ::::
 
