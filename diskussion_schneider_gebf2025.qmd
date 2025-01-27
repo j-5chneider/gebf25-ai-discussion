@@ -42,6 +42,24 @@ library(fontawesome)
 ```
 
 
+## Disclaimer
+
+\
+
+#### Meine Kenntnisse bzgl.
+
+::::{.columns}
+:::{.column .text-center width="40%"}
+**Open Science, Forschungssynthesen**  
+![](www/patrick1.jpg)
+:::
+:::{.column .text-center width="39%"}
+**AI**  
+![](www/patrick2.jpg)
+:::
+::::
+
+
 ## Open Science bei Forschungssynthesen
 
 \
@@ -54,16 +72,44 @@ library(fontawesome)
 * Lakens et al. (2017): Nur 4 % der 20 Metaanalysen erfüllen Dokumentationsstandards, 25 % nicht reproduzierbar.
 * Polanin et al. (2020): 155 Studien berichten im Durchschnitt 55 % der PRISMA-Kriterien.
 
-\
-
-**Aus König et al.:**  
-“we acquired data from 28 meta-analyses” von den 180 der Recherche?
 
 
 ## Open Science bei Forschungssynthesen
 
-[@Schneider.Heck.2024]  
+[@Schneider.Heck.2024]{.bigger}  
 ![](www/schneider_heck.jpg)
+
+
+
+## Open Science bei Forschungssynthesen
+
+\
+
+::::{.columns}
+:::{.column width="65%"}
+#### Warum so wenig open data?
+
+* **Educational Research Review** (Vol. 45, Nov): 
+  - no data: 5
+  - open data: 2
+  - "available on request": 7<br />`r fa("long-arrow-right")` closed data auf Zenodo/OSF geht fast immer! `r fa("long-arrow-right")`  DOI in paper
+* **Aus König et al.:** “we acquired data from 28 meta-analyses” von 180 der Recherche?
+
+\
+
+#### Warum so wenig Präregistrierungen?
+
+* **Educational Research Review** (Vol. 45, Nov): <br />2/14 Artikel mit Präregistrierungen
+* [PROSPERO](https://www.crd.york.ac.uk/prospero/) "systematic reviews with a health-related outcome"
+* Templates gibt es auch bei uns [@Schneider.etal.2022]
+:::
+:::{.column width="35%"}
+![](www/preregRS.jpg)
+:::
+::::
+
+
+
 
 ## Vorgehen
 
@@ -256,7 +302,7 @@ Sinnvoll anwendbar? (evtl. exclusion criteria)
   - Jupyter Notebooks
 * Wie die nächsten Schritte gehen?
   - Verlage haben keinen Grund für Änderungen
-  - Diese müssen von uns angestoßen werden - we got the power ;)
+  - Diese müssen von uns angestoßen werden - we've got the power ;)
   
 :::
 :::{.column width="30%"}
@@ -378,10 +424,26 @@ gelangen zu **identischen** Resultaten
 
 \
 
-LLM / AI wird wohl intransparent bleiben  
+::::{.columns}
+:::{.column width="55%"}
+
+#### LLM / AI wird wohl intransparent bleiben  
 
 ![](www/ai.jpg){.border1}  
 [(Reuters, January 22, 2025)](https://www.reuters.com/technology/artificial-intelligence/trump-announce-private-sector-ai-infrastructure-investment-cbs-reports-2025-01-21/)
+:::
+:::{.column width="45%"}
+
+#### Aber
+
+ist proprietäre AI wirklich weniger transparent als ein "trained rater"?
+
+* Input (z.B. Kodiersystem) wird definiert
+* Output wird dokumentiert
+
+:::
+::::
+
 
 
 
